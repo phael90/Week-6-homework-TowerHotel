@@ -21,4 +21,7 @@ public abstract class Room {
     public ArrayList getGuestList(){
         return this.guestList;
     }
+
+
 }
+

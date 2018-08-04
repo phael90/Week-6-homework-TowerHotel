@@ -31,4 +31,5 @@ public class HotelTowers{
     public ArrayList<DiningRoom> getDiningRoomList (){
         return this.diningRoomList;
     }
+
 }

@@ -1,5 +1,6 @@
 package Rooms;
 
+import Guests.Guest;
 import RoomAbstract.Room;
 
 public class BedRoom extends Room {
@@ -24,6 +25,14 @@ public class BedRoom extends Room {
 
     public double getNightRate(){
         return nightRate;
+    }
+
+    public void addGuestToList(Guest guest) {
+        getGuestList().add(guest);
+    }
+
+    public void removeGuestFromList(Guest guest) {
+        getGuestList().remove(guest);
     }
 
 }
