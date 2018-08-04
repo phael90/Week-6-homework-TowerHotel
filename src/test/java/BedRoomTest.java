@@ -16,19 +16,22 @@ public class BedRoomTest {
     }
 
     @Test
-    public void capacity() {
+    public void hasCapacity() {
         assertEquals(1, bedRoom.getCapacity());
     }
 
     @Test
-    public void roomNumber() {
+    public void hasRoomNumber() {
         assertEquals(001, bedRoom.getRoomNumber());
     }
 
     @Test
-    public void roomType() {
+    public void hasRoomType() {
         assertEquals("SINGLE", bedRoom.getRoomType());
     }
+
+    @Test
+    public void hasNightRate() { assertEquals(200.00,bedRoom.getNightRate(), 2);}
 
     @Test
     public void canAddGuestToList(){
