@@ -8,7 +8,7 @@ public class ConfrenceRoom extends Room {
     private String name;
     private double dailyRate;
 
-    public ConfrenceRoom(int capacity){
+    public ConfrenceRoom(int capacity, String name, double dailyRate){
         super(capacity);
         this.name = name;
         this.dailyRate = dailyRate;

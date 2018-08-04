@@ -7,19 +7,14 @@ import java.util.ArrayList;
 
 public class DiningRoom extends Room {
     private String name;
-    private double dailyRate;
 
-    public DiningRoom(int capacity){
+    public DiningRoom(int capacity, String name){
         super(capacity);
         this.name = name;
-        this.dailyRate = dailyRate;
     }
 
     public String getName(){
         return name;
     }
 
-    public double getDailyRate(){
-        return dailyRate;
-    }
 }

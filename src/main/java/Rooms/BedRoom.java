@@ -14,4 +14,16 @@ public class BedRoom extends Room {
         this.nightRate = nightRate;
     }
 
+    public int getRoomNumber(){
+        return roomNumber;
+    }
+
+    public String getRoomType(){
+        return roomType;
+    }
+
+    public double getNightRate(){
+        return nightRate;
+    }
+
 }
