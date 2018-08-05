@@ -1,5 +1,6 @@
 package Hotels;
 
+import Guests.Guest;
 import RoomAbstract.Room;
 import Rooms.BedRoom;
 import Rooms.ConfrenceRoom;
@@ -32,4 +33,17 @@ public class HotelTowers{
         return this.diningRoomList;
     }
 
+    //check in function
+    //add guest to BedRoom
+
+    public void checkIn(Guest guest, BedRoom bedRoom) {
+        bedRoom.addGuestToList(guest);
+    }
+
+    //add check out function
+    //remove guest from BedRoom
+
+    public void checkOut(Guest guest, BedRoom bedRoom) {
+        bedRoom.removeGuestFromList(guest);
+    }
 }
