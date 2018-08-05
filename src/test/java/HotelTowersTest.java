@@ -48,5 +48,11 @@ public class HotelTowersTest {
             hotelTowers.checkOut(guest, bedRoom);
             assertEquals(0, bedRoom.getGuestList().size());
         }
+
+        @Test
+        public void canCheckGuestinRoom () {
+            hotelTowers.checkIn(guest, bedRoom);
+            assertEquals(1,bedRoom.getGuestList().size());
+        }
 }
 

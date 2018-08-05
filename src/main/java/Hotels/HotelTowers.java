@@ -21,29 +21,27 @@ public class HotelTowers{
 
     }
 
-    public ArrayList<BedRoom> getBedRoomList (){
+    public ArrayList<BedRoom> getBedRoomList(){
         return this.bedRoomList;
     }
 
-    public ArrayList<ConfrenceRoom> getConfrenceRoomList (){
+    public ArrayList<ConfrenceRoom> getConfrenceRoomList(){
         return this.confrenceRoomList;
     }
 
-    public ArrayList<DiningRoom> getDiningRoomList (){
+    public ArrayList<DiningRoom> getDiningRoomList(){
         return this.diningRoomList;
     }
 
-    //check in function
-    //add guest to BedRoom
-
-    public void checkIn(Guest guest, BedRoom bedRoom) {
+    public void checkIn(Guest guest, BedRoom bedRoom){
         bedRoom.addGuestToList(guest);
     }
 
-    //add check out function
-    //remove guest from BedRoom
-
-    public void checkOut(Guest guest, BedRoom bedRoom) {
+    public void checkOut(Guest guest, BedRoom bedRoom){
         bedRoom.removeGuestFromList(guest);
+    }
+
+    public ArrayList<Guest> getGuestCheckedIn(BedRoom bedRoom){
+        return bedRoom.getGuestList();
     }
 }
