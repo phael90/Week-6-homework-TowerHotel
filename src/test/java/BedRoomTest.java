@@ -1,3 +1,4 @@
+import Enums.RoomType;
 import Guests.Guest;
 import Rooms.BedRoom;
 import org.junit.Before;
@@ -11,7 +12,7 @@ public class BedRoomTest {
 
     @Before
     public void before() {
-        bedRoom = new BedRoom(1, 001, "SINGLE", 200.00);
+        bedRoom = new BedRoom(1, 001, RoomType.SINGLE, 200.00);
         guest = new Guest("Johnatan");
     }
 
@@ -27,7 +28,7 @@ public class BedRoomTest {
 
     @Test
     public void hasRoomType() {
-        assertEquals("SINGLE", bedRoom.getRoomType());
+        assertEquals(RoomType.SINGLE, bedRoom.getRoomType());
     }
 
     @Test

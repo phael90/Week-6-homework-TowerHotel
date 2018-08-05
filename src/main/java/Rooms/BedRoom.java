@@ -1,14 +1,15 @@
 package Rooms;
 
+import Enums.RoomType;
 import Guests.Guest;
 import RoomAbstract.Room;
 
 public class BedRoom extends Room {
     private int roomNumber;
-    private String roomType;
+    private RoomType roomType;
     private double nightRate;
 
-    public BedRoom(int capacity, int roomNumber, String roomType, double nightRate){
+    public BedRoom(int capacity, int roomNumber, RoomType roomType, double nightRate){
         super(capacity);
         this.roomNumber = roomNumber;
         this.roomType = roomType;
@@ -19,7 +20,7 @@ public class BedRoom extends Room {
         return roomNumber;
     }
 
-    public String getRoomType(){
+    public RoomType getRoomType(){
         return roomType;
     }
 
